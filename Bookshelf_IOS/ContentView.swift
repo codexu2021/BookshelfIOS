@@ -8,11 +8,64 @@
 import SwiftUI
 
 struct ContentViews: View {
+    @State private var textField: String = ""
     var body: some View {
             VStack{
-                Text("ここに文字が表示されます")
-                Text("アイウエオ")
-                Text("そうです私がおいなりさんです")
+                TextField("ここに検索したい本を入力", text: $textField)
+                Text("最近追加した本の一覧")
+                VStack{
+                    Text("本の一覧がバーって出る")
+                    Text("本の一覧がバーって出る")
+                    Text("本の一覧がバーって出る")
+                    Text("本の一覧がバーって出る")
+                }
+                VStack{
+                    HStack{
+                        VStack{
+                            Image("sample")
+                            Text("本のタイトル")
+                        }
+                        VStack{
+                            Image("sample")
+                            Text("本のタイトル")
+                        }
+                        VStack{
+                            Image("sample")
+                            Text("本のタイトル")
+                        }
+                        
+                    }
+                    HStack{
+                        VStack{
+                            Image("sample")
+                            Text("本のタイトル")
+                        }
+                        VStack{
+                            Image("sample")
+                            Text("本のタイトル")
+                        }
+                        VStack{
+                            Image("sample")
+                            Text("本のタイトル")
+                        }
+                        
+                    }
+                    HStack{
+                        VStack{
+                            Image("sample")
+                            Text("本のタイトル")
+                        }
+                        VStack{
+                            Image("sample")
+                            Text("本のタイトル")
+                        }
+                        VStack{
+                            Image("sample")
+                            Text("本のタイトル")
+                        }
+                        
+                    }
+                }
             }
             
         }
