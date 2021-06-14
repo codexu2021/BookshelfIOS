@@ -15,6 +15,7 @@
 		FDF18DA92677704000538849 /* Bookshelf_IOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDF18DA72677704000538849 /* Bookshelf_IOS.xcdatamodeld */; };
 		FDF18DB42677704000538849 /* Bookshelf_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF18DB32677704000538849 /* Bookshelf_IOSTests.swift */; };
 		FDF18DBF2677704000538849 /* Bookshelf_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF18DBE2677704000538849 /* Bookshelf_IOSUITests.swift */; };
+		FDF18DCD267780F700538849 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF18DCC267780F700538849 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FDF18DBA2677704000538849 /* Bookshelf_IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bookshelf_IOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF18DBE2677704000538849 /* Bookshelf_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookshelf_IOSUITests.swift; sourceTree = "<group>"; };
 		FDF18DC02677704000538849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF18DCC267780F700538849 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				FDF18D9C2677703E00538849 /* Bookshelf_IOSApp.swift */,
 				FDF18D9E2677703E00538849 /* ContentView.swift */,
+				FDF18DCC267780F700538849 /* SwiftUIView.swift */,
 				FDF18DA02677704000538849 /* Assets.xcassets */,
 				FDF18DA52677704000538849 /* Persistence.swift */,
 				FDF18DAA2677704000538849 /* Info.plist */,
@@ -269,6 +272,7 @@
 				FDF18DA92677704000538849 /* Bookshelf_IOS.xcdatamodeld in Sources */,
 				FDF18D9F2677703E00538849 /* ContentView.swift in Sources */,
 				FDF18D9D2677703E00538849 /* Bookshelf_IOSApp.swift in Sources */,
+				FDF18DCD267780F700538849 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
