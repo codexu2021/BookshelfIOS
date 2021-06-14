@@ -9,10 +9,13 @@ import SwiftUI
 
 struct ContentViews: View {
     var body: some View {
-        NavigationView{
+            VStack{
+                Text("ここに文字が表示されます")
+                Text("アイウエオ")
+                Text("そうです私がおいなりさんです")
+            }
             
         }
-    }
 }
 
 struct ContentView_Preview: PreviewProvider {
