@@ -15,6 +15,8 @@ struct ContentViews: View {
             VStack(alignment: .leading) {
                 TextField("ここに検索したい本を入力", text: $textField)
                 Text("最近追加した本の一覧")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                Spacer()
                 VStack{
                     Text("本の一覧がバーって出る")
                     Text("本の一覧がバーって出る")
@@ -22,6 +24,7 @@ struct ContentViews: View {
                     Text("本の一覧がバーって出る")
                 }
                 Spacer()
+                    .padding()
             }
             VStack{
                 Text("ライブラリ")
