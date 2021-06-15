@@ -16,6 +16,8 @@ struct ContentViews: View {
     var body: some View {
         NavigationView{
         ScrollView{
+            ZStack{
+            VStack{
             RecentAddView()
             librallyView()
                 .navigationBarTitle("BookShelf", displayMode: .inline)
@@ -35,8 +37,12 @@ struct ContentViews: View {
                             //検索バー
                     Button(action: {}){
                         Image(systemName: "folder.badge.plus")
-                    })
+                        })
+                    }
+                //sidemenuはここに表示
+                
                 }
+            }
         }
     }
 }
@@ -51,22 +57,23 @@ struct ContentView_Preview: PreviewProvider {
 }
 
 
-
+//最近追加した本をforeachでぶん回す
 struct RecentAddView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("お帰りなさい")
             Text("最近追加した本の一覧")
-            VStack(){
+            Spacer()
+            ForEach((0..<10), id: \.self) { i in
                 Text("本の一覧がバーって出る")
-                Text("本の一覧がバーって出る")
-                Text("本の一覧がバーって出る")
-                Text("本の一覧がバーって出る")
-            }
-        }.frame(width: 300, height:200, alignment:.leading )
+            
+                }.frame(width: 300, alignment:.leading )
+            }.padding()
+        
+        }
     }
-}
-
+//ライブラリをforeachでぶん回す　写真の下にタイトルを出す
+//横に３つ出したら繰り下がるようにしたい
 struct librallyView: View {
     var body: some View {
         VStack{
